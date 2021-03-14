@@ -1,0 +1,596 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+@font-face {
+	font-family: montserrat;
+	src: url(Montserrat-Bold.ttf);
+}
+
+body{
+  font-family: montserrat;
+  background-color: #f7f7f7;
+  
+}
+nav{
+  height: 80px;
+  width: 100%;
+  background-color: white;
+}
+label.logo{
+  color: black;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 45px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+  margin-top: -50px
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: cornflowerblue;
+  font-size: 17px;
+  padding: 7px 8px;
+  border-radius: 3px;
+  margin-top: -10px;
+}
+
+.fas {
+  color:  #1E5CDD;
+  padding-top: 50px;
+  font-size: 16px;
+  padding-left: 8px;
+}
+
+#hover.active,#hover:hover{
+  transition: .5s;
+  border-bottom: solid 7px #1E5CDD;
+  cursor: pointer;
+}
+
+.fa-arrow-right{
+  padding-top: 10px;
+
+}
+
+.back{
+  font-weight: 900;
+  margin-top: -4.2%;
+  margin-right: 20%;
+}
+
+.contain {
+  margin: 79vh;
+  border: none;
+  outline-offset: 35px;
+  margin-top: 4%;
+  padding: 8px 7px 6px 14px;
+  margin-left: 8%;
+  margin-right: 52%;
+  display: flex;
+}
+
+.contain2 {
+  margin: 83vh;
+  border: 1px solid black;
+  outline-offset: 35px;
+  margin-top: 0%;
+  padding: 12px 0px 0px 7px;
+  margin-left: -1%;
+  margin-right: -91%;
+}
+.contain3 {
+  margin: 83vh;
+  border: 1px solid black;
+  outline-offset: 35px;
+  margin-top: 0%;
+  padding: 12px 3px 11px 3px;
+  margin-left: 93%;
+  margin-right: -103%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.contain4 {
+  padding: 2px 16px;
+}
+
+.cardText {
+  text-align-last: center;
+  margin-left: 39%;
+  margin-top: -1%;
+  margin-bottom: -2%;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: #1E5CDD;
+  float: left;
+  line-height: 80px;
+  margin-left: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.avatar{
+  color: #1E5CDD;
+  float: right;
+  cursor: pointer;
+  display: none;
+  margin: 47px;
+  width: 35px;
+  height: 35px;
+  }
+
+.calendar{
+    float: left;
+    margin-top: 25px;
+    resize: contain;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    }
+
+.gps{
+    float: left;
+    margin-top: 25px;
+    resize: contain;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    }
+
+.date{
+  font-size: 10px;
+  font-weight: normal;
+  padding-top: 28px;
+}
+
+.local{
+  font-size: 10px;
+  font-weight: normal;
+  padding-top: 28px;
+  padding-bottom: 16px;
+}
+
+.paragrafo{
+  font-size: 13px;
+}
+
+#check{
+  display: none;
+}
+
+#avt{
+  display: none;
+}
+
+.search{
+  padding-left: 20px;
+  font-size: 25px;
+  margin:0px;
+  margin-top: 70px;
+}
+
+.cdDisplay{
+  display: flex;
+}
+
+.hr{
+  float: right;
+  margin-right: 990px;
+  margin-top: 18px;
+  color: black;
+}
+.title{
+  margin: 50px;
+  padding-left: 100px;
+}
+
+h2 {
+  position: relative;
+}
+
+h2 span {
+  background-color: #f7f7f7;
+  padding-right: 10px;
+}
+
+.seeAll:after{
+  margin-left: 45%;
+  font-size: 15px;
+  color: #7DA1E7;
+  content: "Ver todas as células";
+}
+
+.hashtags{
+  font-size: 10px;
+  color: #7DA1E7;
+}
+
+.hashtags:hover{
+    color: #1E5CDD;
+}
+
+.buscC {
+  font-size: 22pt;
+}
+
+.arrow{
+  position: absolute;
+  top: 31%;
+  height: 25px;
+}
+
+h2:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.5em;
+  border-top: 1px solid black;
+  width: 45%;
+  z-index: -1;
+  margin-left: 350px;
+}
+
+.column {
+    float: right;
+    width: 33.33%;
+    padding: 5px;
+    padding-top: 18px;
+}
+
+@media (max-width: 952px){
+
+  label.logo{
+    font-size: 30px;
+    padding-left: 30px;
+  }
+
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+}
+
+@media (max-width: 1445px){
+
+  nav ul li a{
+    color: #1E5CDD;
+    font-size: 13px;
+    padding: 7px 5px;
+    border-radius: 3px;
+  }
+
+  label.logo{
+    color: black;
+    font-size: 24px;
+    line-height: 80px;
+    padding: 0 45px;
+    font-weight: bold;
+  }
+}
+
+
+@media (max-width: 1586px){
+
+.cdDisplay{
+  display: flex;
+  padding-left: 136px;
+}
+
+#card #img img {
+  height: 180px;
+  width: 280px;
+  object-fit: cover;
+  margin-top: 40px;
+}
+
+#wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 32vh;
+   padding-left: 12px;
+   padding-right: 20px;
+}
+
+
+#column {
+  float: right;
+  width: 38.33%;
+  padding: 5px;
+  padding-top: 18px;
+}
+
+#wrapper #card {
+  background: white;
+  width: 525px;
+  height: 230px;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  justify-content: space-between;
+  box-shadow: 0px 0px 5px rgb(0 0 0 / 20%);
+}
+
+h2:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.5em;
+  border-top: 1px solid black;
+  width: 40%;
+  z-index: -1;
+  margin-left: 350px;
+  }
+
+.seeAll:after {
+  margin-left: 42%;
+  font-size: 15px;
+  color: #1E5CDD;
+  content: "Ver todas as células";
+  }
+   
+}
+
+@media (max-width: 1408px){
+  h2:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0.5em;
+    border-top: 1px solid black;
+    width: 30%;
+    z-index: -1;
+    margin-left: 350px;
+  }
+
+  .seeAll:after {
+    margin-left: 30%;
+    font-size: 15px;
+    color: #1E5CDD;
+    content: "Ver todas as células";
+  }
+
+  .arrow {
+    position: absolute;
+    top: 31%;
+    height: 25px;
+  }
+ 
+}
+
+.logo {
+  font-size: 35px;
+  padding-top: 42px;
+  padding-left: 20px;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+}
+
+
+@media (max-width: 1101px){
+
+  .fas {
+    color: #1E5CDD;
+    font-size: 16px;
+    padding-left: 8px;
+  }
+
+  #arrow {
+    float: right;
+    position: absolute;
+    top: 25.4%;
+    resize: contain;
+    height: 25px;
+    padding-left: 0px;
+  }
+
+  .seeAll:after{
+    margin-left: 4%;
+    font-size: 15px;
+    color:#1E5CDD;
+    padding-top: 9px;
+    content: "Ver todas";    
+  }
+
+  h2:after {
+    display: none;
+  }
+
+  h2 {
+    position:unset;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+
+  #avt {
+    display: block;
+  }
+
+  ul {
+	  overflow: scroll;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 70px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a:hover,a.active {
+    background: none;
+    color:#1E5CDD;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  #title {
+    padding-left: 20px;
+    font-size: 25px;
+    margin:0px;
+    margin-top: 70px;
+  }
+
+  .logo{
+    font-size: 31px;
+    padding-top: 42px;
+    padding-left: 20px;
+  }
+
+  .buscC {
+    font-size: 15pt;
+  }
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: montserrat;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  padding-left: 117px;
+}
+
+.wrapper .card {
+  background: white;
+  width: 630px;
+  height: 230px;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  justify-content: space-between;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+
+.card .content {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .card .img {
+  height: 90px;
+  width: 90px;
+  position: absolute; 
+}
+
+.card .img img {
+  height: 200px;
+  width: 370px;
+  object-fit: cover;
+  margin-top: 40px;
+}
+
+.card .details {
+  margin-left: 80px;
+}
+.details span {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+@media all and  (max-width: 1250px){
+
+  #cdDisplay {
+    display: grid;
+    padding-left: 0px;
+  }
+
+ #wrapper {
+  height: 50vh !important;
+}
+
+#wrapper #card {
+  background: white !important;
+  width: 349px !important;
+  height: 364px !important;
+  align-items: center !important;
+  padding: 20px !important;
+  position: relative !important;
+  justify-items: self-end !important;
+  display: table-footer-group !important;
+  box-shadow: 0px 0px 5px rgb(0 0 0 / 20%) !important;
+}
+
+#card #img img {
+    height: 181px !important;
+    width: 312px !important;
+    object-fit: cover !important;
+    margin-top: 40px !important;
+}
+
+#column {
+    float: right;
+    width: 100.33%;
+    padding: 5px;
+    padding-top: 181px;
+}
+
+.arrow {
+  position: absolute;
+  top: 31%;
+  height: 25px;
+}
+ 
+}
+
